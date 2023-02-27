@@ -9,3 +9,8 @@ Client: The device you want to connect/to use.
 First-Hop: OCI = Oracle Cloud Infrastructure (I use the free tier).
 
 Second-Hop: OPNsense
+
+
+## Attention: 
+
+This is specifically designed for Ubuntu
