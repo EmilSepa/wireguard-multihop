@@ -4,7 +4,7 @@ Address = IP-CLIENT/32
 DNS = IP-DNS1, IP-DNS2
 
 [Peer]
-PublicKey = PublicKeyUbuntu
-PresharedKey = PresharedKeyUbuntu
+PublicKey = PublicKey-FirstHop
+PresharedKey = Preshared-FirstHop
 AllowedIPs = 0.0.0.0/0
 Endpoint = UbuntuIP:UbuntuPort
