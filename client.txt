@@ -1,5 +1,5 @@
 [Interface]
-PrivateKey = Client-PrivateKey
+PrivateKey = PrivateKey-Client
 Address = IP-CLIENT/32
 DNS = IP-DNS1, IP-DNS2
 
