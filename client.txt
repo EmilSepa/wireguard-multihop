@@ -7,4 +7,4 @@ DNS = IP-DNS1, IP-DNS2
 PublicKey = PublicKey-FirstHop
 PresharedKey = Preshared-FirstHop
 AllowedIPs = 0.0.0.0/0
-Endpoint = UbuntuIP:UbuntuPort
+Endpoint = IP-FirstHop-Public:Port-FirstHop-Public
