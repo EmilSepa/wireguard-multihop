@@ -1,0 +1,10 @@
+[Interface]
+PrivateKey = Client-PrivateKey
+Address = IP-CLIENT/32
+DNS = IP-DNS1, IP-DNS2
+
+[Peer]
+PublicKey = PublicKeyUbuntu
+PresharedKey = PresharedKeyUbuntu
+AllowedIPs = 0.0.0.0/0
+Endpoint = UbuntuIP:UbuntuPort
