@@ -6,4 +6,6 @@ From there the connection is redirected to my OPNsense and I can use my selfhost
 
 Client: The device you want to connect/to use.
 
-OCI = Oracle Cloud Infrastructure (I use the free tier).
+First-Hop: OCI = Oracle Cloud Infrastructure (I use the free tier).
+
+Second-Hop: OPNsense
