@@ -1,0 +1,27 @@
+[Interface]
+PrivateKey = PrivateKey-FirstHop
+Address = IP-FirstHop-Private/32
+ListenPort = Port-FirstHop-Public
+MTU = 1432
+Table = wireguard
+DNS = IP-SecondHop-Interface
+
+PreUp = ip rule add iif wg0 table wireguard
+PostUp = iptables -A FORWARD -i wg0 -j ACCEPT && iptables -A FORWARD -o wg0 -j ACCEPT
+
+PreDown = iptables -D FORWARD -i wg0 -j ACCEPT && iptables -D FORWARD -o wg0 -j ACCEPT
+PostDown = ip rule del iif wg0 table wireguard
+
+#SecondHop
+[Peer]
+PublicKey = PublicKey-SecondHop
+PresharedKey = Preshared-Key-SecondHop
+Endpoint = IP-SecondHop-Public:Port-SecondHop-Public
+AllowedIPs = 0.0.0.0/0
+PersistentKeepalive = 25
+
+#Client
+[Peer]
+PublicKey = PublicKey-Client
+PresharedKey = PresharedKey-Client
+AllowedIPs = IP-Client/32
