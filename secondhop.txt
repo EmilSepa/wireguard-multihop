@@ -1,0 +1,28 @@
+# Local Config OPNsense
+		
+Name : MultiVPN
+		
+Public Key: PublicKey-SecondHop
+		
+Private Key: Private-Key-SecondHop
+		
+Listen Port: Port-SecondHop-Public
+		
+Tunnel Address: IP-Interface-SecondHop/24
+
+Peers: OCI-SecondHop (available after following configuratio)
+
+
+
+#Endpoint
+
+Name: OCI-SecondHop
+		
+Public Key: PublicKey-SecondHop
+		
+Shared Secret: PresharedKey-SecondHop
+		
+Allowed IPs: IP-Interface-SecondHop/24
+	
+
+		
