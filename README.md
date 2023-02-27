@@ -14,3 +14,11 @@ Second-Hop: OPNsense
 ## Attention: 
 
 This is specifically designed for Ubuntu
+
+You have to flush your iptables after every restart of your ubuntu instance.
+You can use a script, that flushes the iptables and starts wireguard.
+
+If you dont have a public IP for your OPNsense, you can use a DynDNS-Serice. 
+
+
+You have to configure your OPNsense to activate your wg-interface in the right way. (Road-Warrior-Setup (see offical OPNsense Docs) 
