@@ -20,7 +20,7 @@ You can use a script, that flushes the iptables and starts wireguard.
 Before you start you config you have to add the wireguard-table we use at the firsthop with:  
 `echo 123 wireguard >> /etc/iproute2/rt_table`
 
-If you dont have a public IP for your OPNsense, you can use a DynDNS-Serice. 
+If you dont have a public IP for your OPNsense, you can use a DynDNS-Service. 
 
 
 You have to configure your OPNsense to handle wireguard like an interface. (Road-Warrior-Setup (see offical OPNsense Docs) 
